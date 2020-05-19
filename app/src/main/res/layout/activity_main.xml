@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/welcomeimage" />
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_width="408dp"
+        android:layout_height="368dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeImage"
+        app:layout_constraintVertical_bias="0.485"
+        app:srcCompat="@drawable/frame" />
+
+    <ImageButton
+        android:id="@+id/beijingBtn"
+        android:layout_width="150dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toTopOf="@+id/shenzhenBtn"
+        app:layout_constraintEnd_toStartOf="@+id/frame"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/shenzhenBtn"
+        app:layout_constraintTop_toBottomOf="@+id/frame"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/beijingbtn" />
+
+    <ImageButton
+        android:id="@+id/shanghaiBtn"
+        android:layout_width="140dp"
+        android:layout_height="156dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/guangzhouBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/beijingBtn"
+        app:layout_constraintTop_toTopOf="@+id/frame"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/shanghaibtn" />
+
+    <ImageButton
+        android:id="@+id/guangzhouBtn"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/shenzhenBtn"
+        app:srcCompat="@drawable/guangzhoubtn" />
+
+    <ImageButton
+        android:id="@+id/shenzhenBtn"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shanghaiBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shenzhenbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
